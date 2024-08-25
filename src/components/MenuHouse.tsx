@@ -240,7 +240,7 @@ type GLTFResult = GLTF & {
 };
 
 export function MenuHouse(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF("../../public/models/MenuHouse.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF("../../models/MenuHouse.glb") as GLTFResult;
   return (
     <group {...props} dispose={null}>
       <group position={[0.746, -7.08, -0.022]} scale={14.471}>
@@ -515,4 +515,4 @@ export function MenuHouse(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("../../public/models/MenuHouse.glb");
+useGLTF.preload("../../models/MenuHouse.glb");

@@ -8,7 +8,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 
 export function TreeHouse(props) {
   const group = React.useRef();
-  const { nodes, materials, animations } = useGLTF("../../public/models/treehouse.glb");
+  const { nodes, materials, animations } = useGLTF("../../models/treehouse.glb");
   const { actions } = useAnimations(animations, group);
   return (
     <group ref={group} {...props} dispose={null}>
@@ -1610,4 +1610,4 @@ export function TreeHouse(props) {
   );
 }
 
-useGLTF.preload("../../public/models/treehouse.glb");
+useGLTF.preload("../../models/treehouse.glb");
