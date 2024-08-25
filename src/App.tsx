@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <>
-      <Canvas shadows camera={{ position: [0, 6, 14], fov: 42 }}>
+      <Canvas shadows camera={{ position: [0, 15, 18], fov: 30 }}>
         <color attach="background" args={[0x87ceeb]} />
         <fog attach="fog" args={[0x87ceeb, 30, 40]} />
         <Suspense fallback={null}>
