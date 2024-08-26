@@ -9,7 +9,7 @@ function RotatingMap() {
   // Rotazione lenta della mappa
   useFrame(() => {
     if (mapRef.current) {
-      mapRef.current.rotation.y += 0.0005;
+      mapRef.current.rotation.y += 0.0007;
     }
   });
 
