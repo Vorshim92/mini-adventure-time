@@ -13,11 +13,11 @@ export const Menu = () => {
           <p>
             Made with 💙 by{" "}
             <a href="https://youtube.com/Vorshim92" target="_blank">
-              Vorshim
+              Stefano Scalfari
             </a>
             , Story Telling from{" "}
             <a href="https://instagram.com/" target="_blank">
-              Pier
+              Piergiorgio Idà Lojercio
             </a>
           </p>
         </div>
