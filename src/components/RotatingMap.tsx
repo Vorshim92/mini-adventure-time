@@ -7,9 +7,9 @@ function RotatingMap() {
   const mapRef = useRef<Mesh>(null);
 
   // Rotazione lenta della mappa
-  useFrame(() => {
+  useFrame((_state, delta) => {
     if (mapRef.current) {
-      mapRef.current.rotation.y += 0.0007;
+      mapRef.current.rotation.y += 0.1 * delta;
     }
   });
 

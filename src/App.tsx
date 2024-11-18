@@ -38,7 +38,7 @@ export default function App() {
           <RotatingMap />
           {/* Effetti di post-processing */}
           <EffectComposer>
-            <Bloom intensity={1.5} radius={0.4} threshold={0.2} />
+            <Bloom intensity={1.5} radius={0.4} luminanceThreshold={0.5} luminanceSmoothing={0.2} />
           </EffectComposer>
         </Suspense>
         <OrbitControls enableZoom={false} enableRotate={false} enablePan={false} />
